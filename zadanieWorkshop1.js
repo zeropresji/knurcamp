@@ -22,20 +22,33 @@
     Object.assing(<a>, <b>) - połączenie obkiektu a z obiektem b
 */
 
-const uczniowe = [
+const uczniowie = [
     {wiek: 69, imie: "Jan"},    // 0
     {wiek: 100, imie: "Paweł"}, // 1
     {wiek: 21, imie: "Gaweł"},   // 2
     {wiek: 37, imie: "Karolina"}, // 3
 ];
 
+const uczniowie_wynik = [];
 function rozwiazanie()
 {
+    for(const uczen of uczniowie)
+    {
+        uczniowie_wynik.push(uczen);
+        const uczen_blizniak = Object.assign({}, uczen);
+        uczen_blizniak.wiek=uczen_blizniak.wiek-1;
+        uczen_blizniak.imie=uczen_blizniak.imie+" Zenon";
+        uczniowie_wynik.push(uczen_blizniak);
+
+
+
+    }  
     // MIEJSCE NA WASZ KOD
 }
 
 rozwiazanie();
-console.log(sprawdzZadanie(uczniowe));
+console.log(uczniowie_wynik);
+console.log(sprawdzZadanie(uczniowie_wynik));
 
 // NIE PATRZ TU OK
 
