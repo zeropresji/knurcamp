@@ -57,7 +57,7 @@
    
     Pisz kod tylko pomiędzy MIEJSCE NA TWÓJ KOD i KONIEC MIEJSCA NA TWÓJ KOD.
 */
-const POZIOM_TRUDNOSCI = 2; // 1 albo 2 albo 3
+const POZIOM_TRUDNOSCI = 1; // 1 albo 2 albo 3
 
 // MIEJSCE NA TWÓJ KOD
 
@@ -82,13 +82,13 @@ function kontrola(aktualnyNumerDnia, paszport) {
       console.log("za młody") 
       return false
     } else if (paszport.narodowosc =="BOŚNIA"){
-      console.log("hujowy kraj")
+      console.log("zly kraj")
       return false}
       else if (paszport.narodowosc =="ROSJA"){
-        console.log("hujowy kraj")
+        console.log("zly kraj")
         return false }
         else if (paszport.narodowosc =="WATYKAN"){
-          console.log("hujowy kraj")
+          console.log("zly kraj")
           return false
       
     } else 
